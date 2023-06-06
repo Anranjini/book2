@@ -22,9 +22,9 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>com.cosium.maven</groupId>
-        <artifactId>git-commit-id-plugin</artifactId>
-        <version>4.0.2</version>
+        <groupId>pl.project13.maven</groupId>
+    <artifactId>git-commit-id-plugin</artifactId>
+    <version>4.0.2</version>
         <executions>
           <execution>
             <goals>
