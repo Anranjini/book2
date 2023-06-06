@@ -8,7 +8,7 @@
   <version>1.0.0</version>
   
   <properties>
-    <revision>1.0.0</revision>
+    <revision>${project.version}</revision>
   </properties>
   
   <dependencies>
