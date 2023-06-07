@@ -1,27 +1,37 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "packageRules": [
+  "extends": ["config:base"],
+  "packageManagers": [
     {
-      "packageNames": [
-        "com.example"
-      ],
-      "semanticCommitType": "chore",
-      "versioning": {
-        "pin": {
-          "rangeStrategy": "custom",
-          "lookupName": "org.springframework.boot",
-          "lookupUrl": "https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web"
-        }
-      },
-      "clientRules": [
-        {
-          "major": true,
-          "minor": true,
-          "exclude": ["-alpha"]
-        }
-      ]
+      "packageManager": "maven",
+      "depTypeList": ["maven"]
     }
-  ]
+  ],
+  "schedule": ["every Monday"],
+  "versioning": {
+    "default": "lockFileMaintenance",
+    "lockFileMaintenance": {
+      "pinVersions": {
+        "dependencies": {
+          "org.springframework.boot:spring-boot-starter-web": {
+            "rangeStrategy": "custom",
+            "versions": [
+              "2.5.2",
+              "2.5.1",
+              "2.5.0"
+            ]
+          },
+          "org.springframework.boot:spring-boot-starter-data-jpa": {
+            "rangeStrategy": "custom",
+            "versions": [
+              "2.5.2",
+              "2.5.1",
+              "2.5.0"
+            ]
+          }
+         
+        }
+      }
+    }
+  }
 }
+ 
