@@ -6,7 +6,7 @@
       "depTypeList": ["maven"]
     }
   ],
-  "schedule": ["every Monday"],
+  "schedule": ["every Hour"],
   "versioning": {
     "default": "lockFileMaintenance",
     "lockFileMaintenance": {
