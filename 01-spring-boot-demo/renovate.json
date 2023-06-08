@@ -29,6 +29,10 @@
       }
     }
   },
-    "autodiscover": true
+  "autodiscover": true,
+    
+  "enabled": true
+  
+
 }
  
